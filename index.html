@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Portfolio Web Developer - Front-End, Back-End dan Full-Stack Developer">
+
+    <title>Portfolio | Web Developer</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background Particles -->
+    <div class="particles">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="header">
+
+        <a href="#home" class="logo">
+            <span>&lt;</span>Dev<span>/&gt;</span>
+        </a>
+
+        <nav class="navbar" id="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+
+            <!-- Theme Button -->
+            <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+                <i class="fas fa-moon"></i>
+            </button>
+
+            <!-- Mobile Menu -->
+            <button id="menu-btn" class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HOME ================= -->
+
+    <section class="home" id="home">
+
+        <div class="home-content">
+
+            <p class="greeting">
+                <span class="wave">👋</span> Hello, I'm
+            </p>
+
+            <h1>
+                Ahmad <span>Rifai</span>
+            </h1>
+
+            <h2>
+                I'm a <span id="typing"></span>
+            </h2>
+
+            <p class="home-description">
+                I am a Web & Mobile developer passionate about building modern, responsive, and interactive websites or apps that offer a great user experience.
+            </p>
+
+            <div class="home-buttons">
+
+                <a href="#projects" class="btn primary-btn">
+                    View Projects
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+
+                <a href="#contact" class="btn secondary-btn">
+                    Contact Me
+                    <i class="fas fa-paper-plane"></i>
+                </a>
+
+            </div>
+
+            <div class="social-links">
+
+                <a href="https://github.com/Rexus17" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/ahmad-rifai-9b5486261/" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
+                <a href="https://www.instagram.com/ahmadrifai2274/" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="https://www.facebook.com/profile.php?id=100061745203515&locale=id_ID" aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Developer Card -->
+
+        <div class="home-image">
+
+            <div class="code-card">
+
+                <div class="window-top">
+                    <div class="window-buttons">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <p>developer.js</p>
+                </div>
+
+                <div class="code-content">
+
+                    <p>
+                        <span class="purple">const</span>
+                        <span class="blue">developer</span> =
+                        {
+                    </p>
+
+                    <p class="indent">
+                        name:
+                        <span class="green">'Ahmad Rifai'</span>,
+                    </p>
+
+                    <p class="indent">
+                        role:
+                        <span class="green">'Web Developer'</span>,
+                        <span class="green">'Mobile Developer'</span>
+                    </p>
+
+                    <p class="indent">
+                        skills: [
+                    </p>
+
+                    <p class="indent-2">
+                        <span class="green">'HTML'</span>,
+                        <span class="green">'CSS'</span>,
+                    </p>
+
+                    <p class="indent-2">
+                        <span class="green">'JavaScript'</span>,
+                        <span class="green">'PHP'</span>,
+                    </p>
+
+                    <p class="indent-2">
+                        <span class="green">'Java'</span>
+                        <span class="green">'Laravel'</span>
+                    </p>
+
+                    <p class="indent">
+                        ],
+                    </p>
+
+                    <p class="indent">
+                        available:
+                        <span class="orange">true</span>
+                    </p>
+
+                    <p>};</p>
+
+                    <div class="cursor"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section class="section about" id="about">
+
+        <div class="section-title">
+
+            <span>01. About Me</span>
+
+            <h2>Who <span>Am I?</span></h2>
+
+            <div class="title-line"></div>
+
+        </div>
+
+        <div class="about-container">
+
+            <div class="about-image">
+
+                <div class="profile-circle">
+                    <img src="material/me2.jpeg" alt="ahmadRifai">
+                    <!-- <i class="fas fa-code"></i> -->
+                </div>
+
+            </div>
+
+            <div class="about-content">
+
+                <h3>
+                    A web & mobile developer who loves building things from <span>code.</span>
+                </h3>
+
+                <p>
+                    I have an interest in web & mobile development, particularly in creating modern, responsive, and user-friendly websites or apps.
+                </p>
+
+                <p>
+                    I have experience learning various technologies such as HTML, CSS, Java, JavaScript, PHP, MySQL, Bootstrap, and Laravel.
+                </p>
+
+                <div class="about-info">
+
+                    <div>
+                        <span>Name</span>
+                        <strong>Ahmad Rifai</strong>
+                    </div>
+
+                    <div>
+                        <span>Role</span>
+                        <strong>Web Developer</strong> &
+                        <strong>Mobile Developer</strong>
+                    </div>
+
+                    <div>
+                        <span>Experience</span>
+                        <strong>7+ Years Learning</strong>
+                    </div>
+
+                    <div>
+                        <span>Focus</span>
+                        <strong>Web Development</strong> &
+                        <strong>Mobile Development</strong>
+                    </div>
+
+                </div>
+
+                <a href="#contact" class="btn primary-btn">
+                    Let's Talk
+                    <i class="fas fa-comments"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SKILLS ================= -->
+
+    <section class="section skills" id="skills">
+
+        <div class="section-title">
+
+            <span>02. My Skills</span>
+
+            <h2>My <span>Expertise</span></h2>
+
+            <div class="title-line"></div>
+
+        </div>
+
+
+        <div class="skills-container">
+
+            <div class="skills-card">
+
+                <div class="skill-header">
+                    <i class="fab fa-html5"></i>
+
+                    <div>
+                        <h3>HTML</h3>
+                        <span>Advanced</span>
+                    </div>
+
+                    <strong>100%</strong>
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar" data-width="100%"></div>
+                </div>
+
+            </div>
+
+
+            <div class="skills-card">
+
+                <div class="skill-header">
+                    <i class="fab fa-css3-alt"></i>
+
+                    <div>
+                        <h3>CSS</h3>
+                        <span>Advanced</span>
+                    </div>
+
+                    <strong>100%</strong>
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar" data-width="100%"></div>
+                </div>
+
+            </div>
+
+
+            <div class="skills-card">
+
+                <div class="skill-header">
+                    <i class="fab fa-js"></i>
+
+                    <div>
+                        <h3>JavaScript</h3>
+                        <span>Intermediate</span>
+                    </div>
+
+                    <strong>80%</strong>
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar" data-width="80%"></div>
+                </div>
+
+            </div>
+
+
+            <div class="skills-card">
+
+                <div class="skill-header">
+                    <i class="fab fa-php"></i>
+
+                    <div>
+                        <h3>PHP</h3>
+                        <span>Intermediate</span>
+                    </div>
+
+                    <strong>80%</strong>
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar" data-width="80%"></div>
+                </div>
+
+            </div>
+
+            <div class="skills-card">
+
+                <div class="skill-header">
+                    <i class="fab fa-java"></i>
+
+                    <div>
+                        <h3>Java</h3>
+                        <span>Beginner</span>
+                    </div>
+
+                    <strong>40%</strong>
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar" data-width="40%"></div>
+                </div>
+
+            </div>
+
+            <div class="skills-card">
+
+                <div class="skill-header">
+                    <i class="fab fa-python"></i>
+
+                    <div>
+                        <h3>Python</h3>
+                        <span>Beginner</span>
+                    </div>
+
+                    <strong>30%</strong>
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar" data-width="30%"></div>
+                </div>
+
+            </div>
+
+            <div class="skills-card">
+
+                <div class="skill-header">
+                    <i class="fab fa-laravel"></i>
+
+                    <div>
+                        <h3>Laravel</h3>
+                        <span>Intermediate</span>
+                    </div>
+
+                    <strong>78%</strong>
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar" data-width="78%"></div>
+                </div>
+
+            </div>
+
+
+            <div class="skills-card">
+
+                <div class="skill-header">
+                    <i class="fas fa-database"></i>
+
+                    <div>
+                        <h3>MySQL</h3>
+                        <span>Intermediate</span>
+                    </div>
+
+                    <strong>82%</strong>
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar" data-width="82%"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROJECTS ================= -->
+
+    <section class="section projects" id="projects">
+
+        <div class="section-title">
+
+            <span>03. My Projects</span>
+
+            <h2>Featured <span>Projects</span></h2>
+
+            <div class="title-line"></div>
+
+        </div>
+
+
+        <div class="projects-container">
+
+
+            <article class="project-card">
+
+                <div class="project-image project-one">
+
+                    <i class="fas fa-school"></i>
+
+                    <div class="project-overlay">
+
+                        <a href="#">
+                            <i class="fab fa-github"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-number">01</span>
+
+                    <h3>School Website</h3>
+
+                    <p>
+                        Website sekolah modern dengan informasi
+                        akademik, berita dan profil sekolah.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="project-card">
+
+                <div class="project-image project-two">
+
+                    <img src="material/SportOn E-Commerce Website Home Display.png" alt="">
+                    <!-- <i class="fas fa-shopping-cart"></i> -->
+
+                    <div class="project-overlay">
+
+                        <a href="https://github.com/Rexus17/sporton-fe-vercel-deploy/blob/master/Screenshot%202026-09-08%20120012.png">
+                            <i class="fab fa-github"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-number">02</span>
+
+                    <h3>E-Commerce Website SportOn</h3>
+
+                    <p>
+                        An online store website featuring a product system,
+                        shopping cart, and checkout.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>NextJS</span>
+                        <span>TypeScript</span>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="project-card">
+
+                <div class="project-image project-three">
+
+                    <img src="material/Laundry Management Web Application.png" alt="">
+                    <!-- <i class="fas fa-chart-line"></i> -->
+
+                    <div class="project-overlay">
+
+                        <a href="https://github.com/Rexus17/Competency-Exam-Industry-World-at-Vocational-School-Tunas-Media">
+                            <i class="fab fa-github"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-number">03</span>
+
+                    <h3>Laundry Management App</h3>
+
+                    <p>
+                        An application for managing a laundry business,
+                        featuring a modern and responsive interface.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>Laravel</span>
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                        <span>Bootstrap</span>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="project-card">
+
+                <div class="project-image project-four">
+
+                    <i class="fas fa-school"></i>
+
+                    <div class="project-overlay">
+
+                        <a href="#">
+                            <i class="fab fa-github"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-number">04</span>
+
+                    <h3>School Website</h3>
+
+                    <p>
+                        Website sekolah modern dengan informasi
+                        akademik, berita dan profil sekolah.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="project-card">
+
+                <div class="project-image project-five">
+
+                    <i class="fas fa-school"></i>
+
+                    <div class="project-overlay">
+
+                        <a href="#">
+                            <i class="fab fa-github"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-number">05</span>
+
+                    <h3>School Website</h3>
+
+                    <p>
+                        Website sekolah modern dengan informasi
+                        akademik, berita dan profil sekolah.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="project-card">
+
+                <div class="project-image project-six">
+
+                    <i class="fas fa-school"></i>
+
+                    <div class="project-overlay">
+
+                        <a href="#">
+                            <i class="fab fa-github"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-number">06</span>
+
+                    <h3>School Website</h3>
+
+                    <p>
+                        Website sekolah modern dengan informasi
+                        akademik, berita dan profil sekolah.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="project-card">
+
+                <div class="project-image project-seven">
+
+                    <i class="fas fa-school"></i>
+
+                    <div class="project-overlay">
+
+                        <a href="#">
+                            <i class="fab fa-github"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-number">07</span>
+
+                    <h3>School Website</h3>
+
+                    <p>
+                        Website sekolah modern dengan informasi
+                        akademik, berita dan profil sekolah.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="project-card">
+
+                <div class="project-image project-eight">
+
+                    <i class="fas fa-school"></i>
+
+                    <div class="project-overlay">
+
+                        <a href="#">
+                            <i class="fab fa-github"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-number">08</span>
+
+                    <h3>School Website</h3>
+
+                    <p>
+                        Website sekolah modern dengan informasi
+                        akademik, berita dan profil sekolah.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="project-card">
+
+                <div class="project-image project-nine">
+
+                    <i class="fas fa-school"></i>
+
+                    <div class="project-overlay">
+
+                        <a href="#">
+                            <i class="fab fa-github"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-number">09</span>
+
+                    <h3>School Website</h3>
+
+                    <p>
+                        Website sekolah modern dengan informasi
+                        akademik, berita dan profil sekolah.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SERVICES ================= -->
+
+    <section class="section services" id="services">
+
+        <div class="section-title">
+
+            <span>04. Services</span>
+
+            <h2>What I <span>Do</span></h2>
+
+            <div class="title-line"></div>
+
+        </div>
+
+
+        <div class="services-container">
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+
+                <h3>Web Development</h3>
+
+                <p>
+                    Creating modern, fast, and responsive websites tailored to your needs.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    <i class="fas fa-paint-brush"></i>
+                </div>
+
+                <h3>UI / UX Design</h3>
+
+                <p>
+                    Designing an attractive and user-friendly website interface.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    <i class="fas fa-server"></i>
+                </div>
+
+                <h3>Backend Development</h3>
+
+                <p>
+                    Building backend systems using PHP, Laravel, and databases.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    <i class="fas fa-mobile"></i>
+                </div>
+
+                <h3>Mobile Development</h3>
+
+                <p>
+                    Creating modern, fast, and responsive apps tailored to your needs.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section class="section contact" id="contact">
+
+        <div class="section-title">
+
+            <span>05. Contact</span>
+
+            <h2>Let's <span>Connect</span></h2>
+
+            <div class="title-line"></div>
+
+        </div>
+
+
+        <div class="contact-container">
+
+            <div class="contact-info">
+
+                <h3>Have a project in mind?</h3>
+
+                <p>
+                    Don't hesitate to contact me. Let's create something interesting together.
+                </p>
+
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+
+                    <div>
+                        <span>Email</span>
+                        <p>ahmdpaih@gmail.com</p>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+
+                    <div>
+                        <span>GitHub</span>
+                        <p>github.com/rexus17</p>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+
+                    <div>
+                        <span>Location</span>
+                        <p>Indonesia</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <form class="contact-form" id="contact-form">
+
+                <div class="input-group">
+
+                    <input
+                        type="text"
+                        placeholder="Your Name"
+                        required
+                    >
+
+                    <i class="fas fa-user"></i>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <input
+                        type="email"
+                        placeholder="Your Email"
+                        required
+                    >
+
+                    <i class="fas fa-envelope"></i>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <input
+                        type="text"
+                        placeholder="Subject"
+                        required
+                    >
+
+                    <i class="fas fa-heading"></i>
+
+                </div>
+
+
+                <div class="input-group textarea">
+
+                    <textarea
+                        placeholder="Your Message"
+                        required
+                    ></textarea>
+
+                    <i class="fas fa-message"></i>
+
+                </div>
+
+
+                <button type="submit" class="btn primary-btn">
+                    Send Message
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            <span>&lt;</span>Dev<span>/&gt;</span>
+        </div>
+
+        <p>
+            Designed & Built with ❤️ by Ahmad Rifai
+        </p>
+
+        <div class="footer-social">
+
+            <a href="https://github.com/Rexus17">
+                <i class="fab fa-github"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/ahmad-rifai-9b5486261/">
+                <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a href="https://www.instagram.com/ahmadrifai2274/">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="https://www.facebook.com/profile.php?id=100061745203515&locale=id_ID">
+                <i class="fab fa-facebook"></i>
+            </a>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- Back To Top -->
+
+    <button id="back-top" class="back-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
