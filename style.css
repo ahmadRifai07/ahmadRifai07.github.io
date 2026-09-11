@@ -1440,10 +1440,23 @@ textarea {
     font-size: 13px;
 }
 
+/* MAP */
+
+.map-container {
+  width: 100%;
+  aspect-ratio: 16 / 9; /* bisa disesuaikan, misal 4/3 atau 1/1 */
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 
 /* FORM */
 
-.contact-form {
+/* .contact-form {
 
     display: flex;
 
@@ -1501,7 +1514,7 @@ textarea {
     right: 17px;
 
     color: var(--text-secondary);
-}
+} */
 
 
 /* =========================
