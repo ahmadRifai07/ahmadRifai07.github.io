@@ -1277,6 +1277,48 @@ textarea {
 }
 
 
+/* ---------- Filter buttons ---------- */
+.filter-bar {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px 0 44px;
+}
+
+.filter-btn {
+  padding: 12px 24px;
+  border-radius: 999px;
+  border: none;
+  background: var(--card);
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.filter-btn:hover {
+  background: var(--bg-secondary);
+}
+
+.filter-btn:active {
+  transform: scale(0.97);
+}
+
+.filter-btn.active {
+  background: var(--primary);
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Kartu proyek yang tidak cocok dengan filter yang aktif */
+.project-card.hidden {
+  display: none;
+}
+
+
+
 /* =========================
    SERVICES
 ========================= */

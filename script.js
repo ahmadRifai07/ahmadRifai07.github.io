@@ -97,6 +97,8 @@ const typingElement =
 
 const words = [
     "Web Developer",
+    "Front-End Developer",
+    "Back-End Developer",
     "Full-Stack Developer",
     "Mobile Developer"
 ];
@@ -292,18 +294,45 @@ backTop.addEventListener("click", () => {
    CONTACT FORM
 ========================= */
 
-const contactForm =
-    document.getElementById("contact-form");
+// const contactForm =
+//     document.getElementById("contact-form");
 
 
-contactForm.addEventListener("submit", event => {
+// contactForm.addEventListener("submit", event => {
 
-    event.preventDefault();
+//     event.preventDefault();
 
-    alert(
-        "Terima kasih! Pesan kamu berhasil dikirim."
-    );
+//     alert(
+//         "Terima kasih! Pesan kamu berhasil dikirim."
+//     );
 
-    contactForm.reset();
+//     contactForm.reset();
 
+// });
+
+
+/* =========================
+   BUTTON FILTER
+========================= */
+
+// Ambil semua tombol filter dan semua kartu proyek
+const buttons = document.querySelectorAll('.filter-btn');
+const cards = document.querySelectorAll('.project-card');
+
+buttons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    // 1. pindahkan state aktif ke tombol yang baru diklik
+    buttons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    // 2. ambil kategori dari tombol yang diklik
+    const filter = btn.dataset.filter;
+
+    // 3. tampilkan kartu yang cocok, sembunyikan yang tidak
+    cards.forEach(card => {
+      const match = filter === 'all' || card.dataset.category === filter;
+      card.classList.toggle('hidden', !match);
+    });
+  });
 });
+
