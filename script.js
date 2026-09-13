@@ -206,6 +206,44 @@ skillCards.forEach(card => {
 
 
 /* =========================
+   EDUCATION SCROLL REVEAL (2 arah)
+========================= */
+
+const educationItems =
+    document.querySelectorAll(".education-item");
+
+
+const educationObserver =
+    new IntersectionObserver(
+        entries => {
+
+            entries.forEach(entry => {
+
+                // Muncul saat masuk viewport,
+                // hilang lagi saat keluar viewport
+                // (baik discroll ke bawah maupun ke atas)
+                entry.target.classList.toggle(
+                    "show",
+                    entry.isIntersecting
+                );
+
+            });
+
+        },
+        {
+            threshold: 0.2
+        }
+    );
+
+
+educationItems.forEach(item => {
+
+    educationObserver.observe(item);
+
+});
+
+
+/* =========================
    SCROLL NAVIGATION
 ========================= */
 
@@ -336,4 +374,3 @@ buttons.forEach(btn => {
     });
   });
 });
-
