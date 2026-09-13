@@ -96,6 +96,7 @@ const typingElement =
     document.getElementById("typing");
 
 const words = [
+    "UI/UX Design",
     "Web Developer",
     "Front-End Developer",
     "Back-End Developer",
