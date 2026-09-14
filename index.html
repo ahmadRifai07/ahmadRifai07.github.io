@@ -29,6 +29,24 @@
 
 <body>
 
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="runner">
+            <svg viewBox="0 0 120 160" width="90" height="120">
+                <path class="runner-hair" d="M42 22 Q60 -5 78 22 Q70 10 60 14 Q50 10 42 22Z"/>
+                <circle class="runner-head" cx="60" cy="30" r="18"/>
+                <rect class="runner-body" x="50" y="48" width="20" height="45" rx="8"/>
+                <g class="runner-arm-back"><rect x="46" y="52" width="8" height="30" rx="4"/></g>
+                <g class="runner-arm-front"><rect x="66" y="52" width="8" height="30" rx="4"/></g>
+                <g class="runner-leg-back"><rect x="52" y="90" width="10" height="35" rx="5"/></g>
+                <g class="runner-leg-front"><rect x="62" y="90" width="10" height="35" rx="5"/></g>
+            </svg>
+        </div>
+        <div class="loader-count" id="preloader-count">0<span>%</span></div>
+        <div class="loader-bar-wrap"><div class="loader-bar" id="preloader-bar"></div></div>
+        <p class="loader-label">Loading portofolio</p>
+    </div>
+
     <!-- Background Particles -->
     <div class="particles">
         <span></span>

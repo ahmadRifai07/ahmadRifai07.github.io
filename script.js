@@ -1,4 +1,46 @@
 /* =========================
+   PRELOADER
+========================= */
+
+window.addEventListener("load", () => {
+
+    const preloader = document.getElementById("preloader");
+    const countEl = document.getElementById("preloader-count");
+    const barEl = document.getElementById("preloader-bar");
+
+    let progress = 0;
+
+    function step() {
+
+        progress = Math.min(progress + (Math.random() * 4 + 1), 100);
+
+        countEl.firstChild.textContent = Math.floor(progress);
+        barEl.style.width = progress + "%";
+
+        if (progress < 100) {
+
+            setTimeout(step, 30);
+
+        } else {
+
+            setTimeout(() => {
+
+                preloader.classList.add("hide");
+
+                setTimeout(() => preloader.remove(), 900);
+
+            }, 300);
+
+        }
+
+    }
+
+    step();
+
+});
+
+
+/* =========================
    THEME TOGGLE
 ========================= */
 
