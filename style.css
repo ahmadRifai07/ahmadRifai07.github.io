@@ -86,37 +86,41 @@ article .project-three img {
     transform: translateY(-100%);
 }
 
-.runner {
+.loader-signature {
+    width: min(70vw, 320px);
+    aspect-ratio: 400 / 110;
     margin-bottom: 20px;
-    animation: runnerBob 0.4s ease-in-out infinite;
+    animation: signatureLoop 2.6s cubic-bezier(.65,.05,.36,1) infinite;
 }
 
-@keyframes runnerBob {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-6px); }
+.loader-signature svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: visible;
 }
 
-.runner-hair { fill: var(--primary); }
-.runner-head { fill: #f2d6b3; }
-.runner-body { fill: var(--primary); }
-.runner-arm-back rect,
-.runner-arm-front rect { fill: var(--primary-light); }
-.runner-leg-back rect,
-.runner-leg-front rect { fill: var(--text); }
-
-.runner-leg-back { transform-origin: 57px 90px; animation: swingBack 0.4s ease-in-out infinite; }
-.runner-leg-front { transform-origin: 67px 90px; animation: swingFront 0.4s ease-in-out infinite; }
-.runner-arm-back { transform-origin: 50px 52px; animation: swingFront 0.4s ease-in-out infinite; }
-.runner-arm-front { transform-origin: 70px 52px; animation: swingBack 0.4s ease-in-out infinite; }
-
-@keyframes swingBack {
-    0%, 100% { transform: rotate(35deg); }
-    50% { transform: rotate(-35deg); }
+.sig-stroke {
+    fill: none;
+    stroke: url(#sigGradient);
+    stroke-width: 2.2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vector-effect: non-scaling-stroke;
 }
 
-@keyframes swingFront {
-    0%, 100% { transform: rotate(-35deg); }
-    50% { transform: rotate(35deg); }
+.sig-text {
+    font-family: 'Mrs Saint Delafield', 'Dancing Script', cursive;
+    font-size: 52px;
+}
+
+@keyframes signatureLoop {
+    0%   { clip-path: inset(0 100% 0 0); }
+    8%   { clip-path: inset(0 100% 0 0); }
+    38%  { clip-path: inset(0 0% 0 0); }
+    58%  { clip-path: inset(0 0% 0 0); }
+    88%  { clip-path: inset(0 0% 0 100%); }
+    100% { clip-path: inset(0 0% 0 100%); }
 }
 
 .loader-count {

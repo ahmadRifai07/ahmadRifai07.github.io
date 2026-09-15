@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Mrs+Saint+Delafield&family=Dancing+Script:wght@600&display=swap"
         rel="stylesheet"
     >
 
@@ -31,20 +31,22 @@
 
     <!-- Preloader -->
     <div id="preloader">
-        <div class="runner">
-            <svg viewBox="0 0 120 160" width="90" height="120">
-                <path class="runner-hair" d="M42 22 Q60 -5 78 22 Q70 10 60 14 Q50 10 42 22Z"/>
-                <circle class="runner-head" cx="60" cy="30" r="18"/>
-                <rect class="runner-body" x="50" y="48" width="20" height="45" rx="8"/>
-                <g class="runner-arm-back"><rect x="46" y="52" width="8" height="30" rx="4"/></g>
-                <g class="runner-arm-front"><rect x="66" y="52" width="8" height="30" rx="4"/></g>
-                <g class="runner-leg-back"><rect x="52" y="90" width="10" height="35" rx="5"/></g>
-                <g class="runner-leg-front"><rect x="62" y="90" width="10" height="35" rx="5"/></g>
+        <div class="loader-signature">
+            <svg viewBox="0 0 400 110" preserveAspectRatio="xMidYMid meet">
+                <defs>
+                    <linearGradient id="sigGradient" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="400" y2="110">
+                        <stop offset="0%" stop-color="var(--primary)"/>
+                        <stop offset="100%" stop-color="var(--primary-light)"/>
+                    </linearGradient>
+                </defs>
+                <line class="sig-stroke" x1="14" y1="70" x2="68" y2="70"/>
+                <text class="sig-stroke sig-text" x="70" y="83">Loading Porfolio</text>
+                <line class="sig-stroke" x1="298" y1="70" x2="388" y2="70"/>
             </svg>
         </div>
         <div class="loader-count" id="preloader-count">0<span>%</span></div>
         <div class="loader-bar-wrap"><div class="loader-bar" id="preloader-bar"></div></div>
-        <p class="loader-label">Loading portofolio</p>
+        <!-- <p class="loader-label">Loading portofolio</p> -->
     </div>
 
     <!-- Background Particles -->
