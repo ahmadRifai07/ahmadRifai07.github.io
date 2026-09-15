@@ -12,14 +12,14 @@ window.addEventListener("load", () => {
 
     function step() {
 
-        progress = Math.min(progress + (Math.random() * 4 + 1), 100);
+        progress = Math.min(progress + (Math.random() * 1.5 + 0.5), 100);
 
         countEl.firstChild.textContent = Math.floor(progress);
         barEl.style.width = progress + "%";
 
         if (progress < 100) {
 
-            setTimeout(step, 30);
+            setTimeout(step, 50);
 
         } else {
 
