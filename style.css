@@ -48,6 +48,12 @@ body.light-mode {
     position: center;
 }
 
+article .project-one img {
+    width: 300px;
+    height: 150px;
+    position: center;
+}
+
 article .project-two img {
     width: 300px;
     height: 150px;
