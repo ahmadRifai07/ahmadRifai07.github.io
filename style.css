@@ -66,6 +66,12 @@ article .project-three img {
     position: center;
 }
 
+article .project-four img {
+    width: 300px;
+    height: 150px;
+    position: center;
+}
+
 
 /* =========================
    PRELOADER
