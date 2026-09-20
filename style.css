@@ -1677,7 +1677,7 @@ textarea {
 
     place-items: center;
 
-    font-size: 65px;
+    font-size: 30px;
 
     color: rgba(255,255,255,0.8);
 
@@ -1867,6 +1867,8 @@ textarea {
 
     font-size: 10px;
 }
+
+
 
 
 /* ---------- Filter buttons ---------- */
