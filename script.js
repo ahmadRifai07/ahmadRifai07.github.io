@@ -139,7 +139,8 @@ const typingElement =
 
 const words = [
     "Web Developer",
-    "Mobile Developer"
+    "Mobile Developer",
+    "Game Developer"
 ];
 
 let wordIndex = 0;
